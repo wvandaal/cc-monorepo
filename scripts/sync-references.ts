@@ -259,7 +259,9 @@ function main(): void {
   console.log(`Found ${packages.length} package(s)\n`);
 
   if (packages.length === 0) {
-    console.log("No packages found. Nothing to sync.");
+    console.log("No packages found. Clearing references...\n");
+    updateRootTsconfig(packages);
+    console.log("\n=== Sync complete! ===");
     return;
   }
 
