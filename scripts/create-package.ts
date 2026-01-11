@@ -12,7 +12,7 @@ import { fileURLToPath } from "node:url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const WORKTREE_ROOT = join(__dirname, "..");
-const TEMPLATE_DIR = join(WORKTREE_ROOT, ".template");
+const TEMPLATE_DIR = join(WORKTREE_ROOT, "packages", ".template");
 const PACKAGES_DIR = join(WORKTREE_ROOT, "packages");
 
 function processTemplate(
